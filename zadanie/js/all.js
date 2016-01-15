@@ -16,9 +16,9 @@
 
     Form.prototype.check = function(oEvent) {
         var checked = this.form.querySelectorAll('[name="character"]:checked');
-        var lightSide = this.form.querySelectorAll('[value="light_side"]:checked');
+        var yoda = document.getElementById('checkbox_yoda').checked;
 
-        if(checked.length && !lightSide.length) {
+        if(checked.length && !yoda) {
             this.audio.play();
 
             oEvent.preventDefault();
