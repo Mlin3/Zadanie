@@ -114,18 +114,18 @@ html, body
 {
     display: block;
     position: relative;
-    left: -18px;
+    left: -19px;
     
-    width: 310px;
+    width: 316px;
     height: 70px;
     border: none;
     margin: auto;
     margin-top: 20px;
     
     background-color: black;
-    font-size: 23px;
+    font-size: 29px;
     font-weight: bold;
-    color: #ffda35;
+    color: #fddf4f;
     outline: 0;
 }
 
@@ -134,13 +134,13 @@ html, body
     display: block;
     position: absolute;
     top: 0;
-    left: 310px;   
+    left: 316px;   
     
     width: 0;
     height: 0;
     border-top: 35px solid transparent;
     border-bottom: 35px solid transparent;
-    border-left: 36px solid black;
+    border-left: 38px solid black;
     
     content: "";
 }
