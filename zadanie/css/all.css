@@ -80,8 +80,7 @@ html, body {
     width: 316px;
     height: 70px;
     border: none;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto 0;
     background-color: black;
     font-size: 29px;
     font-weight: bold;
