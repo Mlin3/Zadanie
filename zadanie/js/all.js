@@ -10,6 +10,7 @@
     function Form(form, audioFile) {
         this.form = form;
         this.audio = new Audio(audioFile);
+        this.audio.preload = 'auto';
 
         this.form.addEventListener('submit', this.check.bind(this));
     }
