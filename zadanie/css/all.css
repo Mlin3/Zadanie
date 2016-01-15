@@ -1,0 +1,157 @@
+
+html,body,div,input,button,li,ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+ul
+{
+    list-style: none;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+.characters
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.characters form
+{
+    padding: 10px;
+    
+    text-align: center;
+}
+
+.characters li
+{
+    display: inline-block;
+    position: relative;
+    
+    width: 256px;
+    height: 256px;
+}
+
+.characters li input[type=checkbox]
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+   
+    opacity: 0;
+}
+
+.characters li label
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border: solid white 3px;
+    border-radius: 20px;
+    
+    overflow: hidden;
+
+    background: center no-repeat;
+    text-indent: 100%;
+    cursor: pointer;
+}
+
+#checkbox_yoda + label
+{
+    background-image: url(../images/yoda.png);
+}
+
+#checkbox_trooper + label
+{
+    background-image: url(../images/trooper.png);
+}
+
+#checkbox_vader + label
+{
+    background-image: url(../images/vader.png);
+}
+
+.characters li label:hover:before
+{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    
+    width: 100%;
+    padding: 10px 0;
+    
+    content: attr(data-sentence) " ";
+    background-color: rgba(0,0,0,0.8);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-indent: 0;
+}
+
+.characters li input[type=checkbox]:checked + label
+{
+    border-color: black;
+}
+
+.characters button[type="submit"]
+{
+    display: block;
+    position: relative;
+    left: -18px;
+    
+    width: 310px;
+    height: 70px;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+    
+    background-color: black;
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffda35;
+    outline: 0;
+}
+
+.characters button[type="submit"]:after
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 310px;   
+    
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 36px solid black;
+    
+    content: "";
+}
+
+.characters button[type="submit"]:hover
+{
+    background-color: #ffda35;
+    color: black;
+}
+
+.characters button[type="submit"]:hover:after
+{
+    border-left-color: #ffda35;
+}
