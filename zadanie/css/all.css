@@ -97,7 +97,7 @@ html, body
     width: 100%;
     padding: 10px 0;
     
-    content: attr(data-sentence) " ";
+    content: attr(data-sentence);
     background-color: rgba(0,0,0,0.8);
     font-weight: bold;
     color: white;
