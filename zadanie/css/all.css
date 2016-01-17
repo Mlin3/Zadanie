@@ -86,7 +86,7 @@ html, body {
     display: block;
     position: absolute;
     top: 0;
-    left: 316px;
+    left: 100%;
     width: 0;
     height: 0;
     border-top: 35px solid transparent;
