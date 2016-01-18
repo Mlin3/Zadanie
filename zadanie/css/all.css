@@ -30,7 +30,6 @@ html, body {
     display: none;
 }
 .characters li label {
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -69,13 +68,12 @@ html, body {
     text-indent: 0;
 }
 .characters button {
-    display: block;
     position: relative;
     left: -19px;
     width: 316px;
     height: 70px;
     border: none;
-    margin: 20px auto 0;
+    margin: 20px 0 0;
     background-color: black;
     font-size: 23px;
     font-weight: bold;
